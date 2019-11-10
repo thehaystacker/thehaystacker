@@ -1,22 +1,25 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import CacheRoute, {CacheSwitch} from 'react-router-cache-route';
 import "./scss/app.scss";
 
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import Blog from "./components/Blog/Blog";
+import Garage from "./components/Garage/Garage";
+import Page404 from "./components/Page404/Page404";
 
 function App() {
   return (
     <BrowserRouter>
-      <CacheSwitch>
-        <CacheRoute path="/" exact component={Home} when="always" />
+      <Switch>
+        <Route path="/" exact component={Home} />
         <Route path="/projects" component={Projects} />
         <Route path="/resume" component={Resume} />
         <Route path="/blog" component={Blog} />
-      </CacheSwitch>
+        <Route path="/garage" component={Garage} />
+        <Route path="*" component={Page404} />
+      </Switch>
     </BrowserRouter>
   );
 }

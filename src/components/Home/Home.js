@@ -17,12 +17,10 @@ class Home extends Component {
   render() {
     return (
       <div className="thr-home">
+        <div className="thr-container">
         <Header />
 
-        <h4>Home</h4>
-        <h4>Counter : {this.state.counter}</h4>
-
-        <button type="button" onClick={this.incrementCounter}>Add 1</button>
+        </div>
       </div>
     );
   }

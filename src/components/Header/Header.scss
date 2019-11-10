@@ -1,0 +1,33 @@
+@import '../../scss/modules/elements';
+
+.thr-header {
+  margin: 2em 0;
+   
+  .title {
+    .ico {
+      @extend .txt-terminal-green;
+      margin-right: 10px;
+      
+      .blink {
+        animation: blink 1.2s infinite;
+      }
+    }
+  }
+  
+  .subtext {
+    margin-top: 10px;
+    @extend .txt-medium-grey;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  // 50% {
+  //   opacity: 1;
+  // }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,85 @@
+@import './variables';
+
+.txt-dark-grey {
+  color: $dark-grey;
+}
+.txt-medium-grey {
+  color: $medium-grey;
+}
+.txt-light-grey {
+  color: $light-grey;
+}
+.txt-purple {
+  color: $purple;
+}
+.txt-light-red {
+  color: $light-red;
+}
+.txt-light-green {
+  color: $light-green;
+}
+.txt-terminal-green {
+  color: $terminal-green;
+}
+.txt-light-orange {
+  color: $light-orange;
+}
+.txt-light-yellow {
+  color: $light-yellow;
+}
+.txt-medium-blue {
+  color: $medium-blue;
+}
+.txt-vlight-grey {
+  color: $vlight-grey;
+}
+.txt-dark-red {
+  color: $dark-red;
+}
+.txt-dark-yellow {
+  color: $dark-yellow;
+}
+.txt-dark-green {
+  color: $dark-green;
+}
+
+.txt-c {
+  text-align: center;
+}
+
+
+.txt-h1 {
+  font-size: 46px;
+}
+.txt-h2 {
+  font-size: 38px;
+}
+.txt-h3 {
+  font-size: 32px;
+}
+.txt-h4 {
+  font-size: 28px;
+}
+.txt-h5 {
+  font-size: 22px;
+}
+.txt-h6 {
+  font-size: 18px;
+}
+.txt-p {
+  font-size: 16px;
+  line-height: 22px;;
+}
+
+.txt-red {
+  color: $light-red;
+}
+.txt-green {
+  color: $light-green;
+}
+.txt-orange {
+  color: $light-orange;
+}
+.txt-blue {
+  color: $medium-blue;
+}
