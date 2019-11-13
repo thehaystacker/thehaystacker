@@ -1,0 +1,104 @@
+@import '../../scss/modules/elements';
+
+.thr-sec {
+  .para {
+    margin-bottom: 20px;
+  }
+}
+
+.ims-commit-table {
+  td {
+    vertical-align: baseline;
+    padding: 10px 15px;
+
+    &.td-dot {
+      vertical-align: middle;
+    }
+  }
+
+  .dot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+
+    &.green {
+      background-color: $light-green;
+    }
+
+    &.blue {
+      background-color: $light-blue;
+    }
+
+    &.orange {
+      background-color: $light-orange;
+    }
+
+    &.purple {
+      background-color: $light-purple;
+    }
+
+    &.red {
+      background-color: $light-red;
+    }
+  }
+
+  .ims-cmt-yr {
+    display: block;
+    font-size: 14px;
+    @extend .txt-medium-grey;
+  }
+}
+
+// CHECKOUT
+.sec-chekcout-wrap {
+  text-align: center;
+
+}
+
+.chk-links {
+  margin: 20px 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      margin: 0 20px;
+    }
+  }
+}
+
+.strips {
+  .strip {
+    display: inline-block;
+    width: 20%;
+    height: 4px;
+
+    &.purple {
+      background-color: $light-purple;
+    }
+
+    &.green {
+      background-color: $light-green;
+    }
+
+    &.red {
+      background-color: $light-red;
+    }
+
+    &.blue {
+      background-color: $light-blue;
+    }
+
+    &.orange {
+      background-color: $light-orange;
+    }
+  }
+
+}
+
+.footer {
+  padding: 2em 0;
+}
+// END CHECKOUT

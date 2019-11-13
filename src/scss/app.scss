@@ -1,45 +1,86 @@
 @import "./modules/variables";
 @import "./modules/elements";
 
-// COMMON STYLES
+// COMMON ELEMENTS
+
 body {
   background-color: $dark-grey;
   font-family: monospace;
+  font-weight: 400;
+  font-size: 15px;
   @extend .txt-light-grey;
+  -webkit-font-smoothing: auto;
 }
-h1, h2, h3, h4, h5, h6, p, ul, li {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+pre {
   margin: 0;
   padding: 0;
 }
-ul, li {
+
+ul,
+li {
   list-style: none;
 }
+
 h1 {
   @extend .txt-h1;
-} 
+}
+
 h2 {
   @extend .txt-h2;
-} 
+}
+
 h3 {
   @extend .txt-h3;
-} 
+}
+
 h4 {
   @extend .txt-h4;
-} 
+}
+
 h5 {
   @extend .txt-h5;
-} 
+}
+
 h6 {
   @extend .txt-h6;
-} 
+}
+
 p {
   @extend .txt-p;
+}
+
+a {
+  @extend .txt-light-grey;
+  @extend .txt-p;
+}
+
+pre {
+  white-space: pre-wrap;
 }
 
 ::-moz-selection {
   background-color: #000;
 }
+
 ::selection {
-   background-color: #000;
+  background-color: #000;
 }
-// END COMMON STYLES
+
+// END COMMON ELEMENTS
+
+// COMMON CLASSES
+.thr-sec .sec-title {
+  margin-bottom: 20px;
+}
+
+// END COMMON CLASSES

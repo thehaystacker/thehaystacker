@@ -18,7 +18,7 @@ function App() {
         <Route path="/resume" component={Resume} />
         <Route path="/blog" component={Blog} />
         <Route path="/garage" component={Garage} />
-        <Route path="*" component={Page404} />
+        <Route component={Page404} />
       </Switch>
     </BrowserRouter>
   );

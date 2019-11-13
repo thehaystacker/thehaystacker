@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 import "./Header.scss";
-import Home from '../Home/Home';
 
 class Header extends Component {
   render() {
@@ -19,7 +18,10 @@ class Header extends Component {
         <div className="header-nav">
           <ul>
             <li>
-              <NavLink to="/" component={Home} />
+              <NavLink to="/" exact className="home">Home</NavLink>
+              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/resume">Resume</NavLink>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
           </ul>
         </div>

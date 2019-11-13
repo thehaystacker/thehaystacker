@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 
-import Header from  '../Header/Header';
+import Header from "../Header/Header";
 
 class Projects extends Component {
   render() {
     return (
       <div className="thr-projects">
-        <Header />
+        <div className="thr-container">
+          <Header />
 
-        <h4>Projects</h4>
+          <h4>Projects</h4>
+        </div>
       </div>
     );
   }

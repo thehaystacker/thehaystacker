@@ -6,9 +6,11 @@ class Blog extends Component {
   render() {
     return (
       <div className="thr-blog">
-        <Header />
+        <div className="thr-container">
+          <Header />
 
-        <h4>Blog</h4>
+          <h4>Blog</h4>
+        </div>
       </div>
     );
   }

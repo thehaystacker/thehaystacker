@@ -2,18 +2,18 @@
 
 .thr-header {
   margin: 2em 0;
-   
+
   .title {
     .ico {
       @extend .txt-terminal-green;
       margin-right: 10px;
-      
+
       .blink {
         animation: blink 1.2s infinite;
       }
     }
   }
-  
+
   .subtext {
     margin-top: 10px;
     @extend .txt-medium-grey;
@@ -24,10 +24,39 @@
   0% {
     opacity: 0;
   }
-  // 50% {
-  //   opacity: 1;
-  // }
+
   100% {
     opacity: 1;
+  }
+}
+
+.header-nav {
+  margin: 20px 0;
+
+  ul {
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      a {
+        margin: 0 10px;
+        @extend .txt-b;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:hover,
+        &:active,
+        &.active {
+          @extend .txt-vlight-grey;
+        }
+
+        &.home.active {
+          @extend .txt-light-grey;
+        }
+      }
+    }
   }
 }

@@ -6,9 +6,11 @@ class Resume extends Component {
   render() {
     return (
       <div className="thr-resume">
-        <Header />
+        <div className="thr-container">
+          <Header />
 
-        <h4>Resume</h4>
+          <h4>Resume</h4>
+        </div>
       </div>
     );
   }
