@@ -38,14 +38,12 @@ class Home extends Component {
                 the wee hours of the night I burn my brain with one of my many
                 side projects. I'm always looking for a coding buddy, so if
                 you're interested, get in touch!{" "}
-                <pre>
                   <span role="img" aria-label="email">
                     📨
                   </span>
                   <a href="mailto:thehaystacker.in@gmail.com">
                     thehaystacker.in@gmail.com
                   </a>
-                </pre>
               </p>
               <p className="para">
                 I’m generally full of questions and thirsty for{" "}
@@ -65,132 +63,134 @@ class Home extends Component {
 
             <div className="ims-commit-table">
               <table>
-                <tr>
-                  <td className="td-dot">
-                    <span className="dot green"></span>
-                  </td>
-                  <td>
-                    <p>
-                      Front-End Engineer
-                      <span className="ims-cmt-yr">{"// Current"}</span>
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      <span className="txt-red">Mobiotics, Bangalore, IN</span>
-                    </p>
-                  </td>
-                </tr>
-
-                <tr className="spacer"></tr>
-
-                <tr>
-                  <td className="td-dot">
-                    <span className="dot blue"></span>
-                  </td>
-                  <td>
-                    <p>
-                      Freelance Project
-                      <span className="ims-cmt-yr">{"// Aug 2016"}</span>
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      For a company named{" "}
-                      <span className="txt-green">ITSCCTV</span> based in{" "}
-                      <span className="txt-green">Dubai, UAE</span>
-                    </p>
-                  </td>
-                </tr>
-
-                <tr className="spacer"></tr>
-
-                <tr>
-                  <td className="td-dot">
-                    <span className="dot orange"></span>
-                  </td>
-                  <td>
-                    <p>
-                      Jn. Software Engineer
-                      <span className="ims-cmt-yr">{"// Nov 2015"}</span>
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      Joined{" "}
-                      <span className="txt-purple">
-                        Oceao Technologies, Kochi, IN
-                      </span>
-                    </p>
-                    <p>as Junior web developer</p>
-                  </td>
-                </tr>
-
-                <tr className="spacer"></tr>
-
-                <tr>
-                  <td className="td-dot">
-                    <span className="dot red"></span>
-                  </td>
-                  <td>
-                    <p>
-                      Web Developer Trainee
-                      <span className="ims-cmt-yr">{"// Oct 2015"}</span>
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      From{" "}
-                      <span className="txt-blue">
-                        Baabte System Technologies, Bangalore, IN
-                      </span>
-                    </p>
-                    <p>becomes certified web developer</p>
-                  </td>
-                </tr>
-
-                <tr className="spacer"></tr>
-
-                <tr>
-                  <td className="td-dot">
-                    <span className="dot green"></span>
-                  </td>
-                  <td>
-                    <p>
-                      Graduated
-                      <span className="ims-cmt-yr">{"// Mar 2015"}</span>
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      <span className="txt-orange">
-                        Bachelor of Computer Application
-                      </span>
-                      , from{" "}
-                    </p>
-                    <p>Bharathiyar University, TN</p>
-                  </td>
-                </tr>
-
-                <tr className="spacer"></tr>
-
-                <tr>
-                  <td className="td-dot">
-                    <span className="dot purple"></span>
-                  </td>
-                  <td>
-                    <p>
-                      First Freelance Project
-                      <span className="ims-cmt-yr">{"// Oct 2014"}</span>
-                    </p>
-                  </td>
-                  <td>
-                    <p>
-                      Website for{" "}
-                      <span className="txt-green">MNH Hospital</span>
-                    </p>
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td className="td-dot">
+                      <span className="dot green"></span>
+                    </td>
+                    <td>
+                      <p>
+                        Front-End Engineer
+                        <span className="ims-cmt-yr">{"// Current"}</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <span className="txt-red">Mobiotics, Bangalore, IN</span>
+                      </p>
+                    </td>
+                  </tr>
+  
+                  <tr className="spacer"></tr>
+  
+                  <tr>
+                    <td className="td-dot">
+                      <span className="dot blue"></span>
+                    </td>
+                    <td>
+                      <p>
+                        Freelance Project
+                        <span className="ims-cmt-yr">{"// Aug 2016"}</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        For a company named{" "}
+                        <span className="txt-green">ITSCCTV</span> based in{" "}
+                        <span className="txt-green">Dubai, UAE</span>
+                      </p>
+                    </td>
+                  </tr>
+  
+                  <tr className="spacer"></tr>
+  
+                  <tr>
+                    <td className="td-dot">
+                      <span className="dot orange"></span>
+                    </td>
+                    <td>
+                      <p>
+                        Jn. Software Engineer
+                        <span className="ims-cmt-yr">{"// Nov 2015"}</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        Joined{" "}
+                        <span className="txt-purple">
+                          Oceao Technologies, Kochi, IN
+                        </span>
+                      </p>
+                      <p>as Junior web developer</p>
+                    </td>
+                  </tr>
+  
+                  <tr className="spacer"></tr>
+  
+                  <tr>
+                    <td className="td-dot">
+                      <span className="dot red"></span>
+                    </td>
+                    <td>
+                      <p>
+                        Web Developer Trainee
+                        <span className="ims-cmt-yr">{"// Oct 2015"}</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        From{" "}
+                        <span className="txt-blue">
+                          Baabte System Technologies, Bangalore, IN
+                        </span>
+                      </p>
+                      <p>becomes certified web developer</p>
+                    </td>
+                  </tr>
+  
+                  <tr className="spacer"></tr>
+  
+                  <tr>
+                    <td className="td-dot">
+                      <span className="dot green"></span>
+                    </td>
+                    <td>
+                      <p>
+                        Graduated
+                        <span className="ims-cmt-yr">{"// Mar 2015"}</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        <span className="txt-orange">
+                          Bachelor of Computer Application
+                        </span>
+                        , from{" "}
+                      </p>
+                      <p>Bharathiyar University, TN</p>
+                    </td>
+                  </tr>
+  
+                  <tr className="spacer"></tr>
+  
+                  <tr>
+                    <td className="td-dot">
+                      <span className="dot purple"></span>
+                    </td>
+                    <td>
+                      <p>
+                        First Freelance Project
+                        <span className="ims-cmt-yr">{"// Oct 2014"}</span>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        Website for{" "}
+                        <span className="txt-green">MNH Hospital</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
