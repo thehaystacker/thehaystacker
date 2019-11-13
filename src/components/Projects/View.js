@@ -1,13 +1,16 @@
 import React, { Component } from "react";
+import {  withRouter } from "react-router-dom";
 
 class View extends Component {
   render() {
     console.log(" [props] ", this.props);
 
+    let {isExact} = this.props.match;
+
     return (
       <div
         className="thr-projects"
-        style={{ display: this.props.isExact ? "none" : "block" }}
+        style={{ display: isExact ? "none" : "block" }}
       >
         <h4>View</h4>
       </div>
@@ -15,4 +18,4 @@ class View extends Component {
   }
 }
 
-export default View;
+export default withRouter(View);

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
 class List extends Component {
   state = {
@@ -7,43 +7,48 @@ class List extends Component {
   };
 
   incrementCounter = () => {
+    let updatedCounter = this.state.counter + 1;
     this.setState({
       ...this.state,
-      counter: this.state.counter + 1
+      counter: updatedCounter
     });
   };
 
   render() {
     console.log(" [props] ", this.props);
 
+    let { pathname } = this.props.location;
+    let { isExact } = this.props.match;
+
     return (
       <div
         className="thr-projects"
-        style={{ display: this.props.isExact ? "block" : "none" }}
+        style={{ display: isExact ? "block" : "none" }}
       >
         <h4>List</h4>
 
         <h2>Counter : {this.state.counter}</h2>
-        <button type="button" onClick={this.incrementCounter}>Increment</button>
+        <button type="button" onClick={this.incrementCounter}>
+          Increment
+        </button>
 
         <ul>
           <li>
-            <NavLink to="/projects/view/1">Item 1</NavLink>
+            <NavLink to={`${pathname}/view/1`}>Item 1</NavLink>
           </li>
           <li>
-            <NavLink to="/projects/view/2">Item 2</NavLink>
+            <NavLink to={`${pathname}/view/2`}>Item 2</NavLink>
           </li>
           <li>
-            <NavLink to="/projects/view/3">Item 3</NavLink>
+            <NavLink to={`${pathname}/view/3`}>Item 3</NavLink>
           </li>
           <li>
-            <NavLink to="/projects/view/4">Item 4</NavLink>
+            <NavLink to={`${pathname}/view/4`}>Item 4</NavLink>
           </li>
         </ul>
-        
       </div>
     );
   }
 }
 
-export default List;
+export default withRouter(List);
