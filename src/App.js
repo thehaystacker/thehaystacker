@@ -1,17 +1,21 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import {createBrowserHistory} from 'history';
+import { Router, Switch, Route } from "react-router-dom";
+import asyncComponent from "./components/HOC/asyncComponent";
 import "./scss/app.scss";
 
-import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/Resume";
-import Blog from "./components/Blog/Blog";
-import Garage from "./components/Garage/Garage";
-import Page404 from "./components/Page404/Page404";
+import Home from './components/Home/Home';
+const Projects = asyncComponent(() => import('./components/Projects/Projects'));
+const Resume = asyncComponent(() => import('./components/Resume/Resume'));
+const Blog = asyncComponent(() => import('./components/Blog/Blog'));
+const Garage = asyncComponent(() => import('./components/Garage/Garage'));
+const Page404 = asyncComponent(() => import('./components/Page404/Page404'));
+
+const history = createBrowserHistory();
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/projects" component={Projects} />
@@ -20,7 +24,7 @@ function App() {
         <Route path="/garage" component={Garage} />
         <Route component={Page404} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 

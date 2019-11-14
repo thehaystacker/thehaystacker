@@ -20,6 +20,15 @@ class List extends Component {
     let { pathname } = this.props.location;
     let { isExact } = this.props.match;
 
+    const projectLinks = [];
+    for (let i = 1; i <= 5; i++) {
+      projectLinks.push(
+        <li key={i}>
+          <NavLink to={`${pathname}/view/${i}`}>Item {`${i}`}</NavLink>
+        </li>
+      );
+    }
+
     return (
       <div
         className="thr-projects"
@@ -32,20 +41,7 @@ class List extends Component {
           Increment
         </button>
 
-        <ul>
-          <li>
-            <NavLink to={`${pathname}/view/1`}>Item 1</NavLink>
-          </li>
-          <li>
-            <NavLink to={`${pathname}/view/2`}>Item 2</NavLink>
-          </li>
-          <li>
-            <NavLink to={`${pathname}/view/3`}>Item 3</NavLink>
-          </li>
-          <li>
-            <NavLink to={`${pathname}/view/4`}>Item 4</NavLink>
-          </li>
-        </ul>
+        <ul>{projectLinks}</ul>
       </div>
     );
   }
