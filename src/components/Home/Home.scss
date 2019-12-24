@@ -9,7 +9,7 @@
 .ims-commit-table {
   td {
     vertical-align: baseline;
-    padding: 10px 15px;
+    padding: 5px 5px;
 
     &.td-dot {
       vertical-align: middle;
@@ -45,7 +45,7 @@
 
   .ims-cmt-yr {
     display: block;
-    font-size: 14px;
+    font-size: 11px;
     @extend .txt-medium-grey;
   }
 }
